@@ -1,5 +1,4 @@
 ﻿<?php
-    /*$_GET['page'] = 'sitemap.php';	 gets the variable $page */
     error_reporting(0);
 ?>
 <!DOCTYPE html>

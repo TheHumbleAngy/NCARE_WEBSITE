@@ -4,7 +4,7 @@
         <li><a href="index.php?page=accueil">A Propos</a>
 
             <ul class="subnav">
-                <div class="triangle"></div>
+<!--                <div class="triangle"></div>-->
                 <li><a href="#">Profile</a>
                 </li>
                 <li><a href="#">Histoire</a>

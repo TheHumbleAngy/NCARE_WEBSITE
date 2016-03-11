@@ -1,0 +1,113 @@
+.vsmenu{
+	list-style: none;
+	max-width:100%;
+	width: auto;
+	margin:0;
+	padding:0;
+}
+
+.vsmenu > li{
+	padding: 0px;
+	padding-left: 0px;
+	position: relative;
+}
+
+.vsmenu > li > ul{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0;	
+}
+
+.vsmenu > li > a{
+	text-decoration: none;
+	color:#fff;
+	padding: 6px;
+	display: block;
+}
+
+.vsmenu > li > ul > li{
+	margin-top: 0px;
+	position: relative;	
+	line-height: 25px;
+}
+
+.vsmenu > li > ul > li > a {
+    color: #FFFFFF;
+    display: block;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.vsmenu.vs_codecanyon > li > a{
+
+	background: white; /* Old browsers 
+
+	border-bottom: 1px solid #555;*/
+	color:#01ADDD;
+	font-size: 1em;
+}
+
+.vsmenu.vs_codecanyon > li > ul > li{
+	border-bottom: 1px solid #fff;
+}
+
+.vsmenu.vs_codecanyon  > li > ul > li > a{
+	color:#01ADDD;
+	font-size: 0.9em;
+}
+
+.vsmenu.vs_codecanyon > li > ul > li > a {
+    color: #01ADDD;
+    font-size: 0.9em;
+}
+
+.vsmenu.vs_codecanyon > li > ul > li > a:hover, .vsmenu.vs_codecanyon > li > ul > li > ul > li > a:hover{
+		background-color:#DEF3FA;	
+		color:#01ADDD;
+}
+
+.vsmenu.vs_codecanyon > li  .caret{
+	border-top: 4px solid #01ADDD;
+}
+
+.vsmenu.vs_codecanyon  > li > a:hover{
+		/*background-color: #eee;			MODFIED
+		color:white;
+		border-bottom: 1px solid #eee;*/
+		background-color: #6ED4F1;
+		color: white;
+		border-top: 1px solid whitesmoke;
+		border-radius: 3px;
+}
+
+.vsmenu.vs_codecanyon > li > ul > li{
+	border-bottom: 1px solid #fff;
+}
+
+.vsmenu.vs_codecanyon > li > ul > li {
+	background-color: #F5F5F5;
+}
+
+.gras {
+  font-size: 14px;
+  /*margin: 10px 0;
+  /*font-family: inherit;*/
+  font-family: Segoe UI;
+  line-height: 20px;
+  text-rendering: optimizelegibility;
+  color: white;
+}
+
+.caret {
+	position: absolute;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    vertical-align: top;
+    border-top: 4px solid #fff;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    content: "";
+    right:5px;
+    top:17px;
+}

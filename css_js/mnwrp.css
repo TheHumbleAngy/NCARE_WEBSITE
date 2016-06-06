@@ -9,12 +9,11 @@
     display: none;
     position: absolute;
     top: 78px;
-    width: 160px;
+    width: 173px;
     list-style-type: none;
     background: #fff;
     margin: 0;
     z-index:5;
-    padding:0;
     left: 50%;
 	margin-left: -80px;
     border-radius: 4px;
@@ -25,16 +24,16 @@
 #main-nav .subnav li {
     text-align: left;
     float: left;
-    width: 125px;
-    padding: 12px 0px 10px 15px;
-    margin: 0px 10px;
+    width: 153px;
+    padding: 10px 0 10px 15px;
+    margin: 0 10px;
     border-radius: 4px;
 }
 
 #main-nav .subnav li a {
     color: #01ADDD;
-    height: 0px;
-    line-height:0px;
+    height: 0;
+    line-height:0;
 }
 
 #main-nav .subnav li:hover {
@@ -51,26 +50,32 @@
 
 #nav-primary {
     list-style-type: none;
-    margin: 0 60px;
+    margin-right: auto;
+    margin-left: auto;
     padding: 0;
     height: 100%;
+    width: 90%;
 }
 
 #nav-primary > li {
     float: left;
     position: relative;
     height:100%;
-    margin: 0 20px;
+    /*margin: 0 20px;*/
+    padding: 0 20px;
+    /*width: 12.5%;*/
 }
 
 #nav-primary > li > a {
     float: left;
-    color: #FFF;
+    color: white;
     text-align: center;
     padding-top: 19px;
     line-height: 40px;
     text-decoration:none;
     display: inline-block;
+    height: 100%;
+    width: 100%;
 }
 
 #nav-primary li a:hover {
@@ -95,4 +100,12 @@
 
 #main-nav ul > li {
     display: inline-block;
+}
+
+.justified {
+    width: 18.5%;
+}
+
+li.justified > a {
+    line-height: 20px !important;
 }

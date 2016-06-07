@@ -64,12 +64,18 @@
 
 body {
     font-family: OpenSans, serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 @font-face {
     font-family: OpenSans;
     src: url("../polices/open-sans/OpenSans-Regular.ttf");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: OpenSans-Semibold;
+    src: url("../polices/open-sans/OpenSans-Semibold.ttf");
     font-weight: bold;
 }
 
@@ -165,7 +171,7 @@ body.arriere_plan > div.container {
 }
 
 .sb.sb_blue {
-    box-shadow: 0 5px 20px #888;
+    /*box-shadow: 0 5px 20px #888;*/
 }
 
 .jumbotron.info { !important;
@@ -233,8 +239,33 @@ ul.list-unstyled {
 
 ul.list-unstyled > li > a {
     color: #808080;
+    font-size: smaller;
 }
 
 ul.list-unstyled > li > a:hover {
     font-size: larger;
+}
+
+.sb {
+    border: 1px solid #01ADDD;
+    border-radius: 4px;
+}
+
+.sb .box_content {
+    padding: 15px 20px;
+}
+
+.sb_blue {
+    border: 2px solid #01ADDD
+}
+
+.sb_blue .box_title {
+    background:#01ADDD;
+    color:#fff;
+    padding: 10px 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: OpenSans-Semibold, serif;
+    /*font-size: larger;*/
 }

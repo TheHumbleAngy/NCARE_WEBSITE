@@ -4,21 +4,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!--<link href="css/js-image-slider.css" rel="stylesheet" type="text/css"/>
-    <script src="js/js-image-slider.js" type="text/javascript"></script>
-
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-    <link href="css/bootstrap-responsive.css" rel="stylesheet" type="text/css"/>
-
-    <link href="css/mnwrp.css" rel="stylesheet" type="text/css"/>
-
-    <link href="css/style.css" rel="stylesheet" type="text/css"/>
-    <link href="css/screen.css" rel="stylesheet" type="text/css"/>
-
-    <script src="js/jquery.js"></script>
-    <script src="js/vsmenu.js"></script>
-    <link href="css/vsmenu_.css" type="text/css" rel="stylesheet"/>-->
-
     <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
     <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap-theme.css" rel="stylesheet">
     <link type="text/css" href="css_js/stylish.css" rel="stylesheet">
@@ -45,9 +30,9 @@
                     </div>
                     <div class="col-md-3 col-md-offset-6" style="color: #01addd; text-align: right; top: -5px">
                         <p style="padding-top: 30px; margin: 0">
-                            <a href="index.php?page=accueil">ACCUEIL</a> |
-                            <a href="index.php?page=sitemap">SITEMAP</a> |
-                            <a href="index.php?page=contact">CONTACT</a>
+                            <a href="index.php?page=accueil">Accueil</a> |
+                            <a href="index.php?page=sitemap">Plan du Site</a> |
+                            <a href="index.php?page=contact">Contact</a>
                         </p>
                     </div>
                 </div>
@@ -65,24 +50,32 @@
                 <img src="images/slide-15.jpg" name="slide6" width="100%" height="250">
             </div>
         </div>
-        <!-- End of Image animation -->
 
-        <!-- Menu bar -->
-        <div class="row-fluid">
+        <!-- Menu horizontal -->
+        <div>
             <?php
                 include_once('mnwrp.php');
             ?>
         </div>
-        <!-- End of menu bar -->
 
         <!-- Corps de page -->
-        <div class="row-fluid">
-            <div class="span3">
-                <?php
-                    include('sidebar.php');
-                ?>
+        <div class="row">
+            <div class="col-md-3" style="margin-top: 20px">
+                <div class="sb sb_blue" style="height: 340px">
+                    <div class="box_title">
+                        <h4 style="">La NCA Ré <span class="label label-primary">en BREF!</span></h4>
+                    </div>
+                    <div class="box_content" style="height: 275px; overflow: auto">
+                        <p>
+                            <strong>Date et lieu de création: </strong>
+                        </p>
+                        <p>
+                            <strong>Siège: </strong>Abidjan, Côte d'Ivoire
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="span9">
+            <div class="col-md-9">
                 <?php
                     $page = $_GET['page'];    /* gets the variable $page */
                     if (($page == "contact") || ($page == "equipe") || ($page == "mission") || ($page == "souscriptions")) {
@@ -95,8 +88,8 @@
             </div>
 
         </div>
-        <!-- Corps de page -->
     </div>
+    <br/><br/>
 
     <footer>
         <div class="container" style="padding: 50px 0 40px; width: 80%">

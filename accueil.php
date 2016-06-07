@@ -1,6 +1,6 @@
 ﻿<div class="sb sb_blue">
     <div class="box_title">
-        <h2>Profile</h2>
+        <h3 style="">Profil</h3>
     </div>
     <div class="box_content">
         <p>

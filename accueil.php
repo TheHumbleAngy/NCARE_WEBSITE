@@ -1,6 +1,14 @@
-﻿<div class="sb sb_blue">
+<?php
+    /**
+     * Created by PhpStorm.
+     * User: Ange KOUAKOU
+     * Date: 09/06/2016
+     * Time: 11:15
+     */
+?>
+<div class="sb sb_blue">
     <div class="box_title">
-        <h3 style="">Profil</h3>
+        <h4 style="">Accueil</h4>
     </div>
     <div class="box_content">
         <p>

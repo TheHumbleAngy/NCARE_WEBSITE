@@ -3,6 +3,7 @@
     height: 80px;
     background: #01ADDD;
     font:13px Verdana;
+    margin-bottom: 20px;
 }
 
 #main-nav .subnav {
@@ -40,12 +41,16 @@
     background:#01ADDD;
 }
 
-.subnav > li > a {
-    text-decoration:none;
-}
-
 #main-nav .subnav li:hover a {
     color:#FFF;
+}
+
+#main-nav ul > li {
+    display: inline-block;
+}
+
+.subnav > li > a {
+    text-decoration:none;
 }
 
 #nav-primary {
@@ -96,10 +101,6 @@
     top: -8px;
     left: 50%;
     margin-left: -8px;
-}
-
-#main-nav ul > li {
-    display: inline-block;
 }
 
 .justified {

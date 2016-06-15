@@ -4,15 +4,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet">
-    <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap-theme.css" rel="stylesheet">
-    <link type="text/css" href="css_js/stylish.css" rel="stylesheet">
+    <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap.css" rel="stylesheet"/>
+    <link type="text/css" href="css_js/bootstrap-3.3.4-dist/css/bootstrap-theme.css" rel="stylesheet"/>
+    <link type="text/css" href="css_js/stylish.css" rel="stylesheet"/>
     <link type="text/css" href="css_js/mnwrp.css" rel="stylesheet"/>
+    <link type="text/css" href="css_js/skitter.styles.css" rel="stylesheet"/>
 
-    <script src="css_js/js-image-slider.js" type="text/javascript"></script>
+<!--    <script src="css_js/js-image-slider.js"></script>-->
     <script src="css_js/bootstrap-3.3.4-dist/js/jquery-1.11.3.js"></script>
     <script src="css_js/bootstrap-3.3.4-dist/js/bootstrap.js"></script>
+    <script src="css_js/jquery.easing.1.3.js"></script>
+    <script src="css_js/jquery.skitter.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $(".box_skitter_large").skitter({
+                theme: 'minimalist',
+                interval: 3000,
+                animation: 'random',
+                numbers_align: 'left'
+            });
+        });
+    </script>
     <title>NCA Re</title>
 </head>
 <body class="arriere_plan">
@@ -40,15 +53,47 @@
         </div>
 
         <!-- Image animation -->
-        <div id="sliderframe">
-            <div id="slider">
-                <img src="images/slide-14.jpg" name="slide1" width="100%" height="250">
-                <img src="images/slide-18.jpg" name="slide2" width="100%" height="250">
-                <img src="images/slide-16.jpg" name="slide3" width="100%" height="250">
-                <img src="images/slide-17.jpg" name="slide4" width="100%" height="250">
-                <img src="images/slide-12.jpg" name="slide5" width="100%" height="250">
-                <img src="images/slide-15.jpg" name="slide6" width="100%" height="250">
-            </div>
+        <div class="box_skitter box_skitter_large">
+            <ul>
+                <li>
+                    <img src="images/slide-14_.jpg">
+                    <div class="label_text">
+                        <p>Confiance</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-18.jpg" />
+                    <div class="label_text">
+                        <p>Engagement</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-16.jpg" />
+                    <div class="label_text">
+                        <p>Souscription</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-17.jpg" />
+                    <div class="label_text">
+                        <p>Mutualisation</p>
+                    </div>
+                </li>
+                <li>
+                    <img src="images/slide-12.jpg" />
+                    <div class="label_text">
+                        <p>Slide 5</p>
+                    </div>
+                </li>
+            </ul>
+<!--            <div id="slider">-->
+<!--                <img src="images/slide-14.jpg" name="slide1" height="250">-->
+<!--                <img src="images/slide-18.jpg" name="slide2" height="250">-->
+<!--                <img src="images/slide-16.jpg" name="slide3" height="250">-->
+<!--                <img src="images/slide-17.jpg" name="slide4" height="250">-->
+<!--                <img src="images/slide-12.jpg" name="slide5" height="250">-->
+<!--                <img src="images/slide-15.jpg" name="slide6" height="250">-->
+<!--            </div>-->
         </div>
 
         <!-- Menu horizontal -->
@@ -60,25 +105,15 @@
 
         <!-- Corps de page -->
         <div class="row">
-            <div class="col-md-3" style="margin-top: 20px">
-                <div class="sb sb_blue" style="height: 340px">
-                    <div class="box_title">
-                        <h4 style="">La NCA Ré <span class="label label-primary">en BREF!</span></h4>
-                    </div>
-                    <div class="box_content" style="height: 275px; overflow: auto">
-                        <p>
-                            <strong>Date et lieu de création: </strong>
-                        </p>
-                        <p>
-                            <strong>Siège: </strong>Abidjan, Côte d'Ivoire
-                        </p>
-                    </div>
-                </div>
-            </div>
             <div class="col-md-9">
                 <?php
                     $page = $_GET['page'];    /* gets the variable $page */
-                    if (($page == "contact") || ($page == "equipe") || ($page == "mission") || ($page == "souscriptions")) {
+                    if (($page == "contact") ||
+                        ($page == "equipe") ||
+                        ($page == "mission") ||
+                        ($page == "souscriptions") ||
+                        ($page == "chiffres_cles") ||
+                        ($page == "politique_souscripton")) {
                         $page .= '.php';
                         include_once($page);
                     } else {
@@ -87,6 +122,40 @@
                 ?>
             </div>
 
+            <div class="col-md-3">
+                <div class="sb sb_blue" style="height: 340px">
+                    <div class="box_title">
+                        <h4 style="">La NCA Ré <span class="label label-primary">en BREF!</span></h4>
+                    </div>
+                    <div class="box_content" style="height: 275px; overflow: auto; font-size: 13px">
+                        <p>
+                            <strong>Date et lieu de création: </strong>17 Novembre 2012 à Abidjan, Côte d'Ivoire
+                        </p>
+                        <p>
+                            <strong>Siège: </strong>Abidjan, Côte d'Ivoire
+                        </p>
+                        <p>
+                            <strong>Membres: </strong>
+                        </p>
+                        <p>
+                            <strong>Capital Social: </strong>7.000.000.000 FCFA, soit 10.671.431 €
+                        </p>
+                        <p>
+                            <strong>Fonds Propres: </strong>
+                        </p>
+                        <p>
+                            <strong>Bénéfice Net: </strong>
+                        </p>
+                        <p>
+                            <strong>Chiffre d'Affaires: </strong>
+                        </p>
+                        <p>
+                            <strong>Langues Utilisées: </strong>Français & Anglais
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <br/><br/>

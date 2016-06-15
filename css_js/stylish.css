@@ -194,9 +194,9 @@ body.arriere_plan > div.container {
 #sliderframe {
     width: 100%;
     margin: 20px auto;
-    padding: 20px;
-    background: #01ADDD;
-    border: 1px solid #666;
+    /*padding: 20px;*/
+    background: rgba(1, 202, 255, 0.18);
+    /*border: 1px solid #666;*/
     border-radius: 6px;
     display: block;
 }
@@ -265,7 +265,8 @@ ul.list-unstyled > li > a:hover {
     padding: 10px 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong {
     font-family: OpenSans-Semibold, serif;
     /*font-size: larger;*/
 }
+

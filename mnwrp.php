@@ -1,14 +1,14 @@
-﻿<nav id="main-nav">
+﻿<div id="main-nav">
     <ul id="nav-primary">
-<!--        TODO: Les pourcentage de largeur des <li> sont à MAJ selon qu'un est ajouté ou supprimé -->
-        <li style="width: 8.83%">
+<!--TODO: Les pourcentage de largeur des <li> sont à MAJ selon qu'un est ajouté ou supprimé -->
+        <li style="width: 9%">
             <a href="index.php">Accueil</a>
         </li>
-        <li style="width: 10%">
+        <li style="width: 11%">
             <a href="index.php?page=accueil">A Propos</a>
             <ul class="subnav">
                 <div class="triangle"></div>
-                <li><a href="#">Profile</a>
+                <li><a href="#">Historique</a>
                 </li>
                 <li><a href="#">Chiffres Clés</a>
                 </li>
@@ -16,29 +16,29 @@
                 </li>
             </ul>
         </li>
-        <li style="width: 12.48%">
-            <a href="#">Réassurance</a>
+        <li class="justified" style="width: 12%">
+            <a href="#">Chiffres Clés</a>
             <ul class="subnav">
                 <div class="triangle"></div>
-                <li><a href="#">Vue d'ensemble</a>
+                <li><a href="index.php?page=chiffres_cles&opt=resultats">Résultats</a>
                 </li>
-                <li><a href="#">Stratégie(s)</a>
+                <li><a href="index.php?page=chiffres_cles&opt=gros_sinistres_payes">Gros Sinistres Payés</a>
                 </li>
             </ul>
         </li>
-        <li class="justified">
+        <li class="justified" style="width: 15%">
             <a href="#">Politique de Souscription</a>
             <ul class="subnav">
                 <div class="triangle"></div>
-                <li><a href="#">Territorialité</a>
+                <li><a href="index.php?page=politique_souscripton&opt=territorialite">Territorialité</a>
                 </li>
-                <li><a href="#">Branches</a>
+                <li><a href="index.php?page=politique_souscripton&opt=branches">Branches</a>
                 </li>
-                <li><a href="#">Capacité</a>
+                <li><a href="index.php?page=politique_souscripton&opt=capacite">Capacité</a>
                 </li>
             </ul>
         </li>
-        <li style="width: 11.57%">
+        <li style="width: 13%">
             <a href="#">Partenaires</a>
             <ul class="subnav">
                 <div class="triangle"></div>
@@ -67,4 +67,4 @@
             <a href="#">Contact</a>
         </li>
     </ul>
-</nav>
+</div>
